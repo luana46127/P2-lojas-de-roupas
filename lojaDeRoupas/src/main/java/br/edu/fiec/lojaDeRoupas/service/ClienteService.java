@@ -27,11 +27,11 @@ public class ClienteService {
     }
 
     public Cliente buscarPorCpf(String cpf) {
-        return clienteRepository.findAllByCpf(cpf).orElse(null);
+        return clienteRepository.findByCpf(cpf).orElse(null);
     }
 
     public Cliente buscarPorEmail(String email) {
-        return clienteRepository.findAllByEmail(email).orElse(null);
+        return clienteRepository.findByEmail(email).orElse(null);
     }
 
     public void apagar(Integer id) {

@@ -2,7 +2,7 @@ spring:
   application:
     name: lojaDeRoupas
   datasource:
-    url: jdbc:mysql://localhost::3310/lojaderoupas
+    url: jdbc:mysql://localhost:3306/lojaderoupas
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
